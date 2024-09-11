@@ -3,7 +3,7 @@ console.log('HI')
 const options = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
-    const choise = options[Math.floor(Math.random() * options.length)];
+    const choice = options[Math.floor(Math.random() * options.length)];
     return choice;
 
 }
@@ -15,7 +15,7 @@ function checkWinner(playerSelection, computerSelection) {
     }
     else if (
         (playerSelection == "rock" && computerSelection == "scissors") ||
-        (playerSelection == "paper " && computerSelection == "rock") ||
+        (playerSelection == "paper" && computerSelection == "rock") ||
         (playerSelection == "scissors" && computerSelection == "paper")
     ) {
 
